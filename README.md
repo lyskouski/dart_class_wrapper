@@ -1,2 +1,4 @@
-# flutter_wrapper
+# Flutter Wrapper
 Wrapper for a simplified partial mocking in Unit Testing
+
+[DRAFT] Check https://github.com/lyskouski/app-finance/tree/main/lib/_classes/gen
