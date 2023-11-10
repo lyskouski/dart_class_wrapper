@@ -1,0 +1,14 @@
+targets:
+  $default:
+    builders:
+      dart_class_wrapper|wrapper_generator:
+        enabled: true
+
+builders:
+  wrapper_generator:
+    import: "package:dart_class_wrapper/gen/wrapper_generator.dart"
+    builder_factories: ["wrapperGenerator"]
+    build_extensions: {".dart": [".wrapper.dart"]}
+    auto_apply: dependents
+    build_to: source
+    applies_builders: ["source_gen|combining_builder"]
