@@ -21,7 +21,7 @@ jobs:
       - name: Install Dependencies
         run: |
           dart pub get      
-          dart run build_runner build
+          dart run build_runner build --delete-conflicting-outputs
 
       - name: Verify Formatting
         if: matrix.os == 'ubuntu-latest'
