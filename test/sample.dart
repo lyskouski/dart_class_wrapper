@@ -1,6 +1,4 @@
-
 class Sample {
-
   Sample();
 
   bool isConnected() {
